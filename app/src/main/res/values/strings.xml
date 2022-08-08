@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UFUStudy</string>
+    <string name="user">Usuário</string>
+    <string name="hint_user">Número de Matrícula</string>
+    <string name="password">Senha</string>
+    <string name="hint_pass">Senha</string>
+    <string name="enter_button">enter_button</string>
+    <string name="back_button">back_button</string>
+    <string name="logo_ufu">Logo of UFU</string>
+    <string name="fab_materia1">Botao materia 1</string>
+    <string name="fab_materia2">Botao materia 2</string>
+    <string name="fab_materia3">Botao materia 3</string>
+    <string name="tv_materia_1">MATERIA 1</string>
+    <string name="tv_materia_2">MATERIA 2</string>
+    <string name="tv_materia_3">MATERIA 3</string>
+    <string name="tv_disciplinas">DISCIPLINAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

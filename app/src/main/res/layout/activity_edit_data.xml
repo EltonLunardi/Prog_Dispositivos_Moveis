@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul4_ufu"
+    tools:context=".EditDataActivity">
+
+    <TextView
+        android:id="@+id/title_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/uni_sans_heavy"
+        android:text="Registro"
+        android:textColor="@color/amarelo1_ufu"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_edit"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="ID do Registro = "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Nome mostrado aqui"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Sobrenome mostrado aqui"
+        android:inputType="text"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Numero de matricula mostrado aqui"
+        android:inputType="text"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Disciplina mostrado aqui"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/azul1_ufu"
+        android:text="Mostrar próximo registro" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/azul1_ufu"
+        android:text="Mostrar registro anterior" />
+
+    <Button
+        android:id="@+id/update_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/azul1_ufu"
+        android:text="Atualizar registros" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_data"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/azul1_ufu"
+        android:text="Deletar registro existente" />
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="@string/back_button"
+    tools:context=".id">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/azul1_ufu"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="back_button"
+                    app:srcCompat="@mipmap/back2_icon" />
+
+                <TextView
+                    android:id="@+id/id_tv"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/uni_sans_heavy"
+                    android:gravity="center"
+                    android:text="Identidade Universitária"
+                    android:textAlignment="center"
+                    android:textColor="@color/amarelo1_ufu"
+                    android:textSize="32dp" />
+
+
+            </GridLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".index">
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/azul1_ufu"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    app:srcCompat="@mipmap/user_photo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Numero de Matricula" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Olá, Nome Aluno"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="120dp"
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <ImageButton
+                android:id="@+id/calendar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                app:srcCompat="@mipmap/calendar_icon_round" />
+
+            <Button
+                android:id="@+id/inserir_alunos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:backgroundTint="@color/azul1_ufu"
+                android:textColor="@color/action_button_background"
+                android:onClick="inserir_aluno"
+                android:text="Inserir Alunos" />
+
+            <ImageButton
+                android:id="@+id/id_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                app:srcCompat="@mipmap/id_icon_round" />
+
+            <ImageButton
+                android:id="@+id/grades_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_gravity="center"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                app:srcCompat="@mipmap/grades_icon_round" />
+
+            <ImageButton
+                android:id="@+id/exit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_gravity="center"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                app:srcCompat="@mipmap/exit_icon_round" />
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_disciplinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/uni_sans"
+                android:includeFontPadding="false"
+                android:text="@string/tv_disciplinas"
+                android:textColor="@color/amarelo1_ufu"
+                android:textFontWeight="900"
+                android:textSize="34sp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_materia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/uni_sans"
+                android:text="@string/tv_materia_1"
+                android:textFontWeight="700"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/tv_materia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/uni_sans"
+                android:text="@string/tv_materia_2"
+                android:textFontWeight="700"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/tv_materia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/uni_sans"
+                android:text="@string/tv_materia_3"
+                android:textFontWeight="700"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

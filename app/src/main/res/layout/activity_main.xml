@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azul4_ufu">
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/uni_sans_heavy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Matricula"
+        android:textColor="@color/amarelo1_ufu"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_main"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Insira o nome do Aluno"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Insina o sobrenome do aluno"
+        android:inputType="text"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorHint="?android:attr/textColorHint"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Insira o Numero de Matricula"
+        android:inputType="text"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/amarelo2_ufu"
+        android:drawableTint="@color/amarelo1_ufu"
+        android:ems="10"
+        android:foregroundTint="@color/amarelo3_ufu"
+        android:gravity="center"
+        android:hint="Insira o Subject aqui"
+        android:textColor="@color/black2"
+        android:textColorHighlight="@color/amarelo3_ufu"
+        android:textColorLink="@color/amarelo2_ufu" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="INSERIR DADOS NO BANCO"
+        android:backgroundTint="@color/azul1_ufu"
+        android:textColor="@color/action_button_background" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/azul1_ufu"
+        android:text="EDITAR DADOS UM POR UM"
+        android:textColor="@color/action_button_background" />
+
+    <Button
+        android:id="@+id/update_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/azul1_ufu"
+        android:text="MOSTRAR TODOS DADOS"
+        android:textColor="@color/action_button_background" />
+
+
+</RelativeLayout>
